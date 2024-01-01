@@ -7,6 +7,20 @@
     <title>To do project</title>
 </head>
 <body>
-    <h1>This is the body</h1>
+    <div class="container">
+        <div class="items">
+          <% if (locals.itemList) { %>
+            <% itemList.forEach(item => { %>
+                <h6><%= item %> <span><input type="checkbox"></span></h6>
+            <% }) %>
+          <% } %>
+        </div>
+        <div class="form">
+            <form action="/" method="post">
+                <input type="text" placeholder="Enter Task" name="item">
+                <input type="submit" value="Submit">   
+            </form>
+        </div>
+    </div>
 </body>
 </html>

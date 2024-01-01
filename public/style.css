@@ -1,4 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+:root {
+    --item-color: #392c56;
+}
+
 * {
     margin: 0;
     padding : 0;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color:  #1E1530;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 100px;
+    height: 80vh;
+    width: 25vw;
+    /* border: 2px solid white; */
+    /* border-radius: 40px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.items {
+    font-family: 'Playpen Sans';
+    font-size: 25px;
+  
+}
+
+.items h6 {
+    background-color: var(--item-color);
+    color: #8C8295;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items h6 span {
+    margin-right: 10px;
+}
+
+.form {
+    width: 100%;
+    position: relative;
+}
+
+.form input:first-child {
+    width: 100%;
+    
+    background-color: var(--item-color);
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Playpen Sans', cursive;
+    padding-left: 10px;
+}
+
+.form input:first-child::placeholder {
+   
+}
+
+
+.form input:first-child:focus {
+    outline: none;
+}
+
+.form input:last-child {
+    position: absolute;
+   background-color: var(--item-color);
+   border: none;
+   width: 20%;
+   right: -19px;
+   height: 100%;
+   color: white;
+   font-size: 20px;
+   background-color: #1E1530;
+   font-family: 'Playpen Sans', cursive;
+   padding: 0 10px;
+   cursor: pointer;
 }
